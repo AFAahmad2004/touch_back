@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: var(--font-tajawal), 'Tajawal', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-tajawal), 'Tajawal', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .ad-container {
+    @apply w-full bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden my-4 text-center;
+    min-height: 90px;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold mb-6 text-gray-900 dark:text-white;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+}
